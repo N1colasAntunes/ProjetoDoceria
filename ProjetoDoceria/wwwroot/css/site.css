@@ -1,22 +1,37 @@
-html {
-  font-size: 14px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+header {
+    background-color: #f8b7d1;
+    padding: 10px 20px;
 }
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-html {
-  position: relative;
-  min-height: 100%;
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #6a4c9c;
 }
-
-body {
-  margin-bottom: 60px;
+.lista-nav {
+    display: flex;
+    list-style: none;
+}
+.lista-nav li {
+    margin-left: 20px;
+}
+.lista-nav a {
+    text-decoration: none;
+    color: #6a4c9c;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.lista-nav a:hover {
+    color: #ff6f61;
 }
